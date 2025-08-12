@@ -1,0 +1,3 @@
+# ninja log v5
+1	16024	1744963376424756653	/nas1/lixinqing2022/cjj/DiffusionDrive/projects/mmdet3d_plugin/ops/build/temp.linux-x86_64-3.9/src/deformable_aggregation_cuda.o	b3e398f012a786b4
+1	17772	1744963378122910048	/nas1/lixinqing2022/cjj/DiffusionDrive/projects/mmdet3d_plugin/ops/build/temp.linux-x86_64-3.9/src/deformable_aggregation.o	89ef87815011552e

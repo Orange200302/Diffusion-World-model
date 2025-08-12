@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: DiffOcc",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/train.py",
+            // "program": "${workspaceFolder}/tools/test.py",
+            "args": [
+                "./projects/configs/diffusiondrive_configs/diffusiondrive_small_stage2.py",
+                // "job_data/work_dirs/latest.pth",
+                "--launcher", "none",       // Disable distributed mode for debugging
+                "--deterministic",
+                // "--eval", "bbox",
+                "--work-dir", "./job_data/work_dirs/",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "5", // Use one GPU for debugging
+                "PYTHONPATH": "${env:PYTHONPATH}:${env:HOME}/waytous/cjj/waytous"
+            },
+            "console": "integratedTerminal",//"internalConsole",
+            //"subProcess": true,
+
+        }
+    ]
+}
